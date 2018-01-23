@@ -1,5 +1,6 @@
 # zookeeper_recipe
 
+## zookeeper watcher
 ```
 /usr/bin/python child_watch.py
 List of Children []
@@ -25,3 +26,18 @@ Created /MyPath/child3
 [zk: localhost:2181(CONNECTED) 4] delete /MyPath/child2
 [zk: localhost:2181(CONNECTED) 5] delete /MyPath/child1
 ```
+
+## zookeeper leader election
+```
+$ /usr/bin/python leader_election.py 
+I am leader : 961165dc-c6f7-4858-a315-0be40fca1a47
+961165dc-c6f7-4858-a315-0be40fca1a47 is still working
+961165dc-c6f7-4858-a315-0be40fca1a47 is still working
+961165dc-c6f7-4858-a315-0be40fca1a47 is still working
+961165dc-c6f7-4858-a315-0be40fca1a47 is still working
+961165dc-c6f7-4858-a315-0be40fca1a47 is still working
+```
+ctrl-C
+
+Then another work will become leader
+
